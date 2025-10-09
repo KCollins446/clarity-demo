@@ -1,0 +1,15 @@
+services:
+  backend:
+    build: ./fast_api
+    ports:
+      - "8000:8000"
+    environment:
+      - ENV=development
+  frontend:
+    build: ./next_app/clarity-demo
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:8000
+    depends_on:
+      - backend
