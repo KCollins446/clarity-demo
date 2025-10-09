@@ -17,4 +17,7 @@ Azure proved expensive for casual testing, Docker provides a development platfor
 
 # Dependencies (Local)
 1. Install Docker Desktop. Follow instructions on the [Docker Website](https://www.docker.com/products/docker-desktop/).
-2. Launch Docker containers for the Front End ~and Back End~
+2. Launch Docker containers for the Front End and Back End using:
+    ```bash
+   docker compose up --build
+    ```
